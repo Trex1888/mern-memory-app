@@ -27,15 +27,3 @@ mongoose.set("useFindAndModify", false);
 mongoose.connection.once("open", () => {
   console.log("connected to mongoDB");
 });
-
-// mongoose.connect(connect_url, {
-//   useCreateIndex: true,
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-
-// mongoose.connection.once("open", () => {
-//   console.log("connected to mongoDB1");
-// });
-
-// app.listen(port, () => console.log(`listening on localhost:${port}`));
