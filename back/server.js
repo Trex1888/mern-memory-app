@@ -15,6 +15,10 @@ app.use(cors());
 
 app.use("/posts", postRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Mern Memories app");
+});
+
 mongoose
   .connect(connect_url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() =>
